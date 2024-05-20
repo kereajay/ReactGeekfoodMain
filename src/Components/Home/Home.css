@@ -1,0 +1,114 @@
+*{
+    font-family: serif;
+}
+#mbody{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-position: center;
+    background-size: cover;
+    
+}
+#mbody1 h1{
+    margin-top: 15%;
+    font-weight: bolder;
+    font-size: 1.5cm;
+    color: white;
+    margin-left: 15%;
+
+
+
+}
+#mbody1 h1 span{
+    color: brown;
+}
+#mbody1{
+    /* margin-left: 15%; */
+    /* text-align: center; */
+}
+#mbody1 p{
+    font-size: larger;
+    line-height: 30px;
+    margin-left: 12%;
+    /* text-align: center; */
+} 
+#mbody1 button{
+    padding: 12px;
+    /* font-size: large; */
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    /* margin-left: 10%; */
+}
+#mbody1 #search{
+    margin-left: 12%;
+    background-color: brown;
+    color: white;
+}
+#mbody1 #more{
+    margin-left: 15px;
+}
+/* house */
+#houseinner{
+    display: flex;
+    flex-direction: row;
+}
+#houseimg{
+    margin-top: 8%;
+    margin-left: 2%;
+    /* position: absolute; */
+}
+#housepara{
+
+    margin-top: 20%;
+    margin-left: 8%;
+    width: 35%;
+}
+#housepara button{
+    padding: 10px;
+    background-color: rgb(50, 50, 243);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+} 
+/* #housepara h1{
+
+} */
+
+
+/* card */
+#card{
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 10%;
+}
+#card1{
+    padding: 20px;
+     /* font-size: large; */
+    width:320px;
+    line-height: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#card2 {
+    display: flex;
+    flex-direction: row;
+
+}
+#card2 img{
+    border-radius: 50%;
+}
+#card2  #card2innner{
+margin-left: 15px;
+}
+
+
+#cardholder{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 0%;
+}  
