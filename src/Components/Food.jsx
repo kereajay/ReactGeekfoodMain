@@ -22,11 +22,12 @@ function Food() {
         // setDefaultval(data.meals)
 
     }
-    const searchapply = () => {
+    const searchapply = (e) => {
+        setSearchinputval(e.target.value)
         console.log(searchinputval);
         const searchfilter = fooddata.filter((item) => {
             // const ajay=item.strMeal.split(" ").join("").toLowerCase();
-            return item.strMeal.split(" ").join("").toLowerCase().includes(searchinputval.toLowerCase())
+            return item.strMeal.split(" ").join("").toLowerCase().startsWith(searchinputval.toLowerCase())
 
         })
         setSearchdata(searchfilter);
@@ -44,8 +45,8 @@ function Food() {
             <div className='w-[90%] m-auto flex justify-between'>
                 <div>
 
-                    <input type="search" className='border-2 border-slate-600 py-1 w-56' onChange={(e) => setSearchinputval(e.target.value)} />
-                    <button className='px-4 py-1 text-lg bg-blue-400 ' onClick={searchapply}>Search</button>
+                    <input type="search" className='border-2 border-slate-600 py-1 w-56' onChange={(e) =>searchapply(e) } />
+                    {/* <button className='px-4 py-1 text-lg bg-blue-400 ' onClick={}>Search</button> */}
                 </div>
                 <div>
                     <label htmlFor="" className='text-lg font-semibold px-2' >Filter by</label>
